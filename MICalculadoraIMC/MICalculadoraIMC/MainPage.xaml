@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MICalculadoraIMC.MainPage">
+    
+
+        <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center" WidthRequest="200"  >
+        <Frame BackgroundColor="Navy" 
+                   CornerRadius="50">
+            <Label Text="CALCULAr TU IMC" 
+                       HorizontalTextAlignment="Center "
+                       TextColor="White"
+                       FontSize="Small"/>
+        </Frame>
+        
+        
+        <Entry Placeholder=" Peso" 
+               x:Name = "Peso" Keyboard="Numeric"
+               TextColor="Green"/>
+        <Entry Placeholder=" Altura" 
+               x:Name = "Altura" 
+               Keyboard="Numeric" TextColor="RED"/>
+        <Entry Placeholder=" TU IMC"
+               x:Name="IMC" IsEnabled="False" TextColor="Yellow"/>
+
+            <Button Text=" CAlCULAR"   BackgroundColor="Navy"
+                    TextColor="White"
+                    CornerRadius="50"
+                Clicked= "Button_Clicked" />
+
+        <Label Text="LYL SERIE.COM" 
+                       HorizontalTextAlignment="Center "
+                       TextColor="RED"
+                       FontSize="Small"/>
+
+    </StackLayout>
+
+</ContentPage>
